@@ -10,6 +10,7 @@ namespace PetManager {
         public Person() {
             this.Pets = new BindingList<Pet>();
         }
+//testing
         public string Lastname { get; set; }
         public string Firstname { get; set; }
 
