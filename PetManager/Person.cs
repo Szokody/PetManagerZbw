@@ -12,8 +12,7 @@ namespace PetManager {
         }
 //testing
         public string Lastname { get; set; }
-        public string Firstname { get; set; }
-
+        public  Firstname { get; set; }
         public BindingList<Pet> Pets { get; private set; }
 
 //test
@@ -38,6 +37,7 @@ namespace PetManager {
             return ret;
         }
 
+		
         public override bool Equals(object obj) {
             if (!(obj is Person)) {
                 return object.Equals(obj, this);
@@ -46,8 +46,9 @@ namespace PetManager {
             var person = (Person) obj;
             return string.Equals(this.Lastname, person.Lastname) && string.Equals(this.Firstname, person.Firstname);
         }
-	public override string ToString() {
-            return "HUHU";
+
+		public override string ToString() {
+            return Firstname;
         }
     }
 }
