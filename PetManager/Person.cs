@@ -46,5 +46,8 @@ namespace PetManager {
             var person = (Person) obj;
             return string.Equals(this.Lastname, person.Lastname) && string.Equals(this.Firstname, person.Firstname);
         }
+	public override string ToString() {
+            return "HUHU";
+        }
     }
 }
